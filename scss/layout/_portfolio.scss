@@ -7,6 +7,9 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+@media screen and (max-width: 768px) {
+ display: block;
+}
 }
 .hero_item {
   width: 370px;

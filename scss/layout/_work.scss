@@ -8,7 +8,9 @@
 
 .work {
   padding-bottom: 94px;
-
+@media screen and (max-width: 1199px) {
+display: none;
+}
 &_title {
   margin-bottom: 50px;
   font-weight: 700;

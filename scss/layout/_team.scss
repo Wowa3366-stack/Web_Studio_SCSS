@@ -1,7 +1,29 @@
-.team_list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 320px) {
+  .team_list {
+    display: block;
+  }
+
+  .team_item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
+
+
+
+
+@media screen and (min-width: 768px) {
+  .team_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .team_item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
 .team_item {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -81,4 +103,15 @@
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .team_list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .team_item {
+    width: calc((100% - 90px) / 4);
+  }
 }

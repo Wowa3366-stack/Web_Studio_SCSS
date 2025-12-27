@@ -40,6 +40,12 @@
             </li>
           </ul>
         </nav>
+                         <button 
+            class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+           <svg width="24" height="16">
+              <use href="./img/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
         <ul class="contacts_list">
           <li class="contacts_item">
             <a href="mailto:info@devstudio.com" class="link_contacts">
@@ -316,5 +322,22 @@
         </div>
       </div>
     </footer>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-button js-close-menu">
+        <svg class="menu-close-icon" width="19" height="19">
+          <use href="./img/symbol-defs.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-one">
+        <li><a href="./index.html" class="link link_studio">Студія</a></li>
+        <li><a href="./index.html" class="link">Портфоліо</a></li>
+        <li><a href="./index.html" class="link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu-two">
+        <li> <a href="tel:+380961111111" class="link_tel">+38 096 111 11 11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="link_email">info@devstudio.com</a></li>
+      </ul>
+    </div>
+   <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

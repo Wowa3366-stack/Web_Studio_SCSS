@@ -17,9 +17,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- <link rel="stylesheet" href="reset.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -41,6 +44,12 @@
             </li>
           </ul>
         </nav>
+                  <button 
+            class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+           <svg width="24" height="16">
+              <use href="./img/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
         <ul class="contacts_list">
           <li class="contacts_item">
             <a href="mailto:info@devstudio.com" class="link_contacts">
@@ -67,7 +76,12 @@
           Ефективні рішення для<br />
           вашого бізнесу
         </h1>
-        <button class="hero_button animate__animated animate__bounce" data-modal-open>Замовити послугу</button>
+        <button
+          class="hero_button animate__animated animate__bounce"
+          data-modal-open
+        >
+          Замовити послугу
+        </button>
       </div>
     </section>
     <section class="details">
@@ -127,7 +141,7 @@
         <h2 class="team_title">Наша команда</h2>
         <ul class="team_list">
           <li class="team_item">
-            <img src="./img/Desinger.jpg" alt="Desinger" />
+            <img src="./img/ihor-desk-2x.jpg" alt="Desinger" />
             <div class="div_team_text">
               <h3 class="team_title_h3">Ігор Дем'яненко</h3>
             </div>
@@ -386,7 +400,7 @@
     </section>
     <!-- Підвал Сайту -->
     <footer class="footer">
-      <div class="container">
+      <div class="container flex">
         <div class="footer_div">
           <a href="./index.html" class="webstudio"
             >Web<span class="footer_logo">Studio</span></a
@@ -451,7 +465,7 @@
           </ul>
         </div>
         <div class="footer_div">
-          <p class="footer_title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+          <p class="footer_title curnt">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
           <form class="footer_form">
             <label class="footer_label">
               <input
@@ -461,12 +475,14 @@
                 required
               />
             </label>
+<div class="style_div">
             <button class="footer_button" type="submit">
               Підписатися
               <svg class="telegram_icon" width="24" height="24">
                 <use href="./img/symbol-defs.svg#icon-telegram"></use>
               </svg>
             </button>
+</div>
           </form>
         </div>
       </div>
@@ -506,7 +522,7 @@
             <textarea
               placeholder="Введіть текст"
               class="modal_textarea"
-              ></textarea>
+            ></textarea>
           </label>
           <div class="copy_div">
             <label class="copy_label">
@@ -524,6 +540,22 @@
           <button class="button_label" type="submit">Відправити</button>
         </form>
       </div>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-button js-close-menu">
+        <svg class="menu-close-icon" width="19" height="19">
+          <use href="./img/symbol-defs.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-one">
+        <li><a href="./index.html" class="link link_studio">Студія</a></li>
+        <li><a href="./index.html" class="link">Портфоліо</a></li>
+        <li><a href="./index.html" class="link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu-two">
+        <li> <a href="tel:+380961111111" class="link_tel">+38 096 111 11 11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="link_email">info@devstudio.com</a></li>
+      </ul>
     </div>
     <script src="./js/modal.js"></script>
   </body>

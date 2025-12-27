@@ -19,11 +19,16 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  @media screen and (max-width: 767px) {
+display: none;
+}
+
 }
 .header_nav {
   display: flex;
   margin-right: auto;
 }
+
 .header_item {
   font-weight: 500;
   font-size: 14px;
@@ -99,6 +104,14 @@
 }
 .contacts_list {
   display: flex;
+  @media screen and (max-width: 767px) {
+display: none;
+}
+ @media screen and (min-width: 768px) {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
 }
 .link_contacts,
 .link_telephone {
@@ -128,3 +141,36 @@
 .contacts_item:hover .contacts_icon {
   fill: #2196f3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

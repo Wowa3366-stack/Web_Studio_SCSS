@@ -9,6 +9,31 @@
   padding-bottom: 200px;
   background-position: center;
   background-repeat: no-repeat;
+  @media screen and (min-width: 320px) {
+    background-image: linear-gradient(
+      to img,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/team_mob.jpg");
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+    @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to img,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/team_tag.jpg");
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
 }
 .hero_title {
   font-family: $font-family;
