@@ -112,6 +112,11 @@ display: flex;
 flex-direction: column;
 gap: 10px;
 }
+
+@media screen and (min-width: 1200px) {
+display: flex;
+flex-direction: row;
+}
 }
 .link_contacts,
 .link_telephone {

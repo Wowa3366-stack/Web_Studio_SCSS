@@ -41,3 +41,29 @@
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) {
+  .clients_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .clients_item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients_item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients_list {
+    flex-wrap: nowrap;
+  }
+
+  .clients_item {
+    width: 170px;
+  }
+}

@@ -39,7 +39,7 @@ stroke: white;
 .mobile-menu-one{
 display: flex;
 flex-direction: column;
-margin-bottom: 250px;
+margin-bottom: 170px;
 }
 .mobile-menu-two{
 display: flex;
@@ -71,6 +71,18 @@ color: #757575;
 font-family: var(--font-family);
 font-weight: 500;
 font-size: 34px;
+letter-spacing: 0.02em;
+color: #2196f3;
+}
+.mobile-menu-three{
+display: flex;
+gap: 20px;
+}
+.social_link{
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+line-height: 122%;
 letter-spacing: 0.02em;
 color: #2196f3;
 }
